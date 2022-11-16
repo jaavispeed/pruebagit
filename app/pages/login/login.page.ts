@@ -41,6 +41,7 @@ export class LoginPage implements OnInit {
 }
   
   ngOnInit() {
+    this.menuController.swipeGesture(false, 'first')
   }
   mostrarMenu(){
     this.menuController.open('first');
