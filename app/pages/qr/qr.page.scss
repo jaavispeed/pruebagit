@@ -59,9 +59,12 @@ ion-content{
         right: 4%;
 
         .form-wrapper{
-            box-shadow: 15px;
+            box-shadow: 150px;
             border-radius: 20px;
             padding: 15px 10px;
+            .code{ 
+                text-align: center; 
+            }
 
             ion-item{
                 --background: #efefef;

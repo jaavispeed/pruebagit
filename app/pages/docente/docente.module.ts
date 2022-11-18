@@ -8,6 +8,7 @@ import { DocentePageRoutingModule } from './docente-routing.module';
 
 import { DocentePage } from './docente.page';
 
+
 @NgModule({
   imports: [
     CommonModule,

@@ -18,17 +18,30 @@
       <ion-icon name="arrow-back" routerLink="/docente" color="primary"></ion-icon>
     </div>
   </div>
+  
   <div class="wrapper">
-  
-  
-      <ion-card class="form-wrapper">
-        <ion-card-content>
-          <div id="logo">
-            <img src="assets/qr.jpg" alt="Logo"/>
-          </div>
-  
-        </ion-card-content>
-      </ion-card>
+    <ion-card class="form-wrapper">
+      <ion-item>
+        <ion-select  placeholder="Asignatura" class="fuente2"  [(ngModel)]="usuario.nom">
+          <ion-select-option value="Programación" class="fuente2">Programación movil</ion-select-option>
+          <ion-select-option value="Arquitectura" class="fuente2"> Arquitectura</ion-select-option>
+          <ion-select-option value="Estadistica" class="fuente2"> Estadistica</ion-select-option>
+      </ion-select>
+       </ion-item>
+      <ion-button (click)="GenerarQr()" expand="block"  shape="round">
+        Generar QR
+      </ion-button>
+      <ion-card-content>
+        <div>
+          <qrcode class="code"
+          [qrdata]="qrCodeString"
+          [width]="200"
+          [errorCorrectionLevel]="'M'">
+          </qrcode>
+        </div>
+        
+      </ion-card-content>
+    </ion-card>
 
 
 

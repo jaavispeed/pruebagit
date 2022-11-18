@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QrPage implements OnInit {
 
+  qrCodeString='Bienvenidoadasdasd'
   constructor() { }
-
+  usuario={
+    nom:'',
+  }
+  scannedResult: any;
   ngOnInit() {
+  }
+  GenerarQr(){
+    this.qrCodeString=this.usuario.nom;
+  }
+
+  VerQr(){
+    this.scannedResult = this.qrCodeString;
   }
 
 }
