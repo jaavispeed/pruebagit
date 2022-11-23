@@ -42,7 +42,7 @@
             required class="fuente"></ion-input>
           </ion-item>
           <!--VALIDACION CORREO-->
-          <span *ngIf="f['correo'].getError('pattern')!=null" class="letra">Formato de correo invalido.</span>
+          <span *ngIf="f['correo'].getError('pattern')!=null" class="letra" id="prueba1">Formato de correo invalido.</span>
           <span *ngIf="f['correo'].getError('required')!=null" class="letra">Campo vacio.</span><br>
           <span *ngIf="f['correo'].getError('minlength')!=null" class="letra">Minimo 2 caracteres.</span>
           <!--VALIDACION-->
